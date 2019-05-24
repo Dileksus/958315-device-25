@@ -10,27 +10,31 @@
     		<a class="main-header-logo">
     			<img src="img/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     		</a>
-    		<span class="products-search">Поиск по сайту</span>
+    		<form class="products-search" action="https://echo.htmlacademy.ru" method="post">
+    			<label class="visualy-hidden" >Поиск по сайту
+    				<input type="search" name="search" placeholder="Поиск по сайту">
+    			</label>
+    		</form>
     		<ul class="user-navigation">
     			<li class="user-navigation-login"><a href="profile.html">Войти</a></li>
     			<li class="user-navigation-compare"><a href="compare.html">Сравнить</a></li>
     			<li class="user-navigation-cart"><a href="cart.html">Корзина</a></li>
     		</ul>
-    		<ul class="site-navigation">
-    			<li class="site-navigation-catalog"><a href="catalog-list.html">Каталог</a>
-            <ul class="site-navigation-catalog-list">
-              <li><a href="virtualreality.html">Виртуальная реальность</a></li>
-              <li><a href="monopods.html">Моноподы для селфи</a></li>
-              <li><a href="actioncamera.html">Экшн-камеры</a></li>
-              <li><a href="fitbit.html">Фитнес-браслеты</a></li>
-              <li><a href="smartwatch.html">Умные часы</a></li>
-              <li><a href="quadcopter.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-    			<li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantees.html">Гарантии</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-  		  </ul>
+			<ul class="site-navigation">
+			  <li class="site-navigation-catalog"><a href="catalog-list.html">Каталог</a>
+	          	<ul class="site-navigation-catalog-list">
+	              <li><a href="virtualreality.html">Виртуальная реальность</a></li>
+	              <li><a href="monopods.html">Моноподы для селфи</a></li>
+	              <li><a href="actioncamera.html">Экшн-камеры</a></li>
+	              <li><a href="fitbit.html">Фитнес-браслеты</a></li>
+	              <li><a href="smartwatch.html">Умные часы</a></li>
+	              <li><a href="quadcopter.html">Квадрокоптеры</a></li>
+	          	</ul>
+	      	  </li>
+	    	  <li><a href="delivery.html">Доставка</a></li>
+	          <li><a href="guarantees.html">Гарантии</a></li>
+	          <li><a href="contacts.html">Контакты</a></li>
+  		  	</ul>
     	</nav>
     </header>
     <main class="container">
@@ -41,26 +45,26 @@
       	<p class="aboutus-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       	<p class="aboutus-description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
       	<ul class="aboutus-description-list">
-      		<li>Деловые Линиее</li>
-      		<li>Автотрейдинг</li>
-      		<li>ЖелДорЭкспедиция</li>
+	  		<li>Деловые Линиее</li>
+	  		<li>Автотрейдинг</li>
+	  		<li>ЖелДорЭкспедиция</li>
       	</ul>
       	<p class="aboutus-link">
       		<a href="aboutus.html">Подробнее о нас</a>
       	</p>
       </section>
       <section class="contacts">
-    		<h2>Контакты</h2>
-    		<p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-    		<span class="iframe-map"></span>
-    		<p class="contacts-link">
-      			<a href="#">Напишите нам</a>
-      		</p>
+		<h2>Контакты</h2>
+		<p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+		<span class="iframe-map"></span>
+		<p class="contacts-link">
+  			<a href="#">Напишите нам</a>
+  		</p>
       </section>
     </main>
     <footer class="main-footer">
   		<a class="main-footer-logo">
-    			<img src="img/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+    		<img src="img/device.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     	</a>
   		<p class="address">г. Москва, ул. Строителей, 15</p>
   		<div>
@@ -86,7 +90,26 @@
     </footer>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <p>
+      	<img src="img/map.jpg" width="960" height="559" alt="Магазин по адресу ул. Строителей 15, Санкт-Петербург">
+      </p>
+      <button class="close" type="button">Закрыть</button>
+    </section>
+	<section class="modal modal-feedback">
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      	<label>Ваше имя:
+      		<input type="text" name="name" placeholder="Имя Фамилия">
+      	</label>
+      	<label>Ваш e-mail:
+      		<input type="email" name="email" placeholder="email@example.ru">
+      	</label>
+      	<label>Текст письма:
+      		<textarea name="textarea" rows="4" placeholder="В свободной форме"></textarea>
+      	</label>
+      	<button class="button" type="submit">Отправить</button>
+      	<button class="close" type="button">Закрыть</button>
+      </form>
     </section>
   </body>
 </html>
